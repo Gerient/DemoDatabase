@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -13,6 +15,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     Button btnInsert, btnGetTasks;
+    EditText etDesc, etDate;
+    ListView lvResults;
     TextView tvResults;
 
 
@@ -23,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnInsert = findViewById(R.id.btnInsert);
         btnGetTasks = findViewById(R.id.btnGetTasks);
+        etDesc = findViewById(R.id.editTextDescription);
+        etDate = findViewById(R.id.editTextDate);
+        lvResults = findViewById(R.id.lv);
         tvResults = findViewById(R.id.tvResults);
 
         btnInsert.setOnClickListener(new View.OnClickListener() {
